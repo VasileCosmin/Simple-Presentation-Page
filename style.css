@@ -22,6 +22,8 @@ body {
   justify-content: space-between;
   color: #fff;
   height: 80px;
+  position: fixed;
+  width: 100%;
 }
 
 .navigation a {
