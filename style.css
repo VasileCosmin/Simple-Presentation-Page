@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.blue-background {
+  background-color: #1F2937;
+}
+
+
+/* Navigation Style */
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  height: 80px;
+}
+
+.navigation a {
+  text-decoration: none;
+}
+
+.navigation .logo {
+  font-size: 24px;
+  color: #f9faf8;
+  margin-left: 200px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  margin-right: 200px;
+}
+
+.links .link {
+  list-style: none;
+  margin-left: 30px; 
+}
+
+.links .link a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #E5E7EB;
+  font-weight: 400;
+}
+
+/* Hero Style */
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 200px;
+}
+
+.hero .description .title {
+  color: #f9faf8;
+  font-size: 48px;
+  font-weight: 900;
+  margin-bottom: 5px;
+}
+
+.hero .description p {
+  color: #E5E7EB;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.hero .description .sign-up {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: #3882F6;
+  color: #f9faf8;
+  border-radius: 5px;
+  padding: 5px 30px;
+}
+
+.hero .description .sign-up:hover {
+  font-weight: bold;
+} 
+
+.hero .image {
+  width: 600px;
+  height: 200px;
+  background-color: darkgrey;
+  color: #f9faf8;
+  margin-left: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Information Style */
+
+.information {
+  margin: 50px 0;
+}
+
+.information  h2{
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  color: #1F2937;
+  margin-bottom: 50px;
+}
+
+.information .cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 400px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.card .square {
+  height: 150px;
+  width: 150px;
+  border: 2px solid #3882F6;
+  border-radius: 10px;
+}
+
+.card p {
+  padding: 0 30px;
+  margin-top: 10px;
+}
+
+/* Quote Style */
+
+.quote {
+  background-color: #E5E7EB;
+  padding: 100px 400px;
+}
+
+.quote .text {
+  color: #1F2937;
+  font-size: 36px;
+  font-style: italic;
+  font-weight: lighter;
+}
+
+.quote .author {
+  text-align: end;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+/* Action Style */
+
+.action {
+  background-color: #3882F6;
+  margin: 100px 300px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 30px 0;
+}
+
+.action .text h3 {
+  color: #f9faf8;
+}
+
+.action .text p {
+  color: #E5E7EB;
+}
+
+.action .sign-up {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: #3882F6;
+  border: 1px solid #f9faf8;
+  color: #f9faf8;
+  border-radius: 5px;
+  padding: 5px 30px;
+}
+
+.action .sign-up:hover {
+  font-weight: bold;
+} 
+
+/* Copyright Style */
+
+.copyright {
+  background-color: #1F2937;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.copyright p {
+  color: #E5E7EB;
+  font-size: 18px;
+}
+
+/* Media Queries */
+
+@media(max-width: 1500px) {
+  .information .cards {
+    margin: 0 300px;
+  }
+
+  .quote {
+    padding: 100px 300px;
+  }
+}
+
+@media(max-width: 1500px) {
+  .information .cards {
+    margin: 0 200px;
+  }
+
+  .quote {
+    padding: 100px 200px;
+  }
+
+  .action {
+    margin: 100px 100px;
+  }
+}
+
+@media(max-width: 1080px) {
+  .navigation .logo {
+    margin-left: 50px;
+  }
+  
+  .links {
+    margin-right: 50px;
+  }
+
+  .hero {
+    padding: 100px 50px;
+  }
+
+  .information .cards {
+    margin: 0 150px;
+  }
+
+  .quote {
+    padding: 100px 150px;
+  }
+
+  .action {
+    margin: 100px 50px;
+  }
+}
+
+@media(max-width: 900px) {
+  .information .cards {
+    margin: 0 50px;
+  }
+
+  .quote {
+    padding: 100px 50px;
+  }
+
+  .action {
+    margin: 100px 50px;
+  }
+}
+
+@media(max-width: 750px) {
+  .navigation .logo {
+    margin-left: 20px;
+  }
+  
+  .links {
+    margin-right: 20px;
+  }
+
+  .links .link {
+    margin-left: 15px; 
+  }
+
+  .links .link a {
+    font-size: 16px;
+  }
+
+  .hero {
+    padding: 100px 20px;
+  }
+
+  .information .cards {
+    margin: 0 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .card p {
+    margin-bottom: 20px;
+  }
+
+  .quote {
+    padding: 100px 20px;
+  }
+
+  .quote .text {
+    font-size: 26px;
+  }
+
+  .action {
+    margin: 100px 50px;
+  }
+}
+
+@media(max-width: 620px) {
+  .action {
+    margin: 100px 20px;
+  }
+}
+
+@media(max-width: 550px) {
+  .navigation .logo {
+    margin-left: 5px;
+  }
+  
+  .links {
+    margin-right: 5px;
+  }
+
+  .links .link {
+    margin-left: 15px; 
+  }
+
+  .links .link a {
+    font-size: 14px;
+  }
+
+  .hero {
+    padding: 50px 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .hero .description .title {
+    font-size: 36px;
+  }
+  
+  .hero .description p {
+    font-size: 16px;
+  }
+
+  .hero .image {
+    width: auto;
+    height: 300px;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .action {
+    margin: 100px 10px;
+  }
+
+  .action .text h3 {
+    font-size: 18px;
+  }
+  
+  .action .text p {
+    font-size: 12px;
+  }
+  
+  .action .sign-up {
+    padding: 5px 20px;
+  }
+}
+
+@media(max-width: 400px) {
+  .navigation .logo {
+    font-size: 18px;
+  }
+
+  .links .link {
+    margin-left: 8px; 
+  }
+
+  .links .link a {
+    font-size: 12px;
+  }
+
+  .hero .description .sign-up {
+    width: 100%;
+  }
+
+  .information .cards {
+    margin: 0 5px;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .action {
+    margin: 100px 5px;
+    flex-direction: column;
+    padding: 20px 5px;
+  }
+  
+  .action .sign-up {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
