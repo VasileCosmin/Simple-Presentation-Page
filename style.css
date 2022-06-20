@@ -23,6 +23,7 @@ body {
   color: #fff;
   height: 80px;
   position: fixed;
+  top: 0;
   width: 100%;
 }
 
@@ -63,6 +64,11 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 100px 200px;
+}
+
+.hero::before {
+  content: '';
+  height: 30px;
 }
 
 .hero .description .title {
